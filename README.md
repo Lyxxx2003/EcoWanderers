@@ -18,7 +18,7 @@ React, Figma, cookie, mapbox
 4. Replace "YOUR TOKEN KEY" with your ***actual key***
 
 How to get the token?
-1. Go to [mainbox mainwebsite](https://www.mapbox.com/)
+1. Go to [mapbox mainwebsite](https://www.mapbox.com/)
 2. Create an account
 3. Under ***Accessing tokens***, either use **Default public token** (1st time user) or **Create a token** (has to be public)
 4. Copy your token to "YOUR TOKEN KEY" in '.env.local'
