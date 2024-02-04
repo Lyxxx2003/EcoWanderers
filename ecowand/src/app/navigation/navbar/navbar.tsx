@@ -1,20 +1,15 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Logo from "./Logo";
-import Button from "./Button";
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '/about', current: false },
-  { name: 'Carbon Savings', href: '/savings', current: false },
+  { name: 'Carbon Savings', href: '/saving', current: false },
   { name: 'History', href: '/history', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ')
 }
 
