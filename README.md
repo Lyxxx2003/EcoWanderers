@@ -8,14 +8,15 @@ This repository includes designs and codes for a sustainable travel web.
 # Techniques
 React, Figma, cookie, mapbox
 
-## Mapbox Tutorial -- how to get the codes work on your local machine?
+## Mapbox Tutorial -- how to get a personal token in Mapbox?
 1. Go to folder ecowand:\
   git clone // clone the repository\
   cd EcoWanderers // go to the folder you've cloned\
   cd ecowand // go to the ***root*** repository
 2. under 'ecowand', create a file called ***.env.local***
 3. inside '.env.local', Type: NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN="YOUR TOKEN KEY"
-4. Replace "YOUR TOKEN KEY" with your ***actual key***
+4. go to file 'page.tsx' (cd ecowand/src) and replace 'NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN' with the default token after 
+5. Replace "YOUR TOKEN KEY" with your ***actual key***
 
 How to get the token?
 1. Go to [mapbox mainwebsite](https://www.mapbox.com/)
