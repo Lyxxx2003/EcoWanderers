@@ -12,11 +12,6 @@ const Navbar = () => {
             <Logo />
             <ul className="hidden md:flex gap-x-6 text-white">
               <li>
-                <Link href="/about">
-                  <p>About Us</p>
-                </Link>
-              </li>
-              <li>
                 <Link href="/saving">
                   <p>Saving</p>
                 </Link>
