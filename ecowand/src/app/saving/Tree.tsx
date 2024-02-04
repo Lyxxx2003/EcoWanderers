@@ -6,6 +6,7 @@ const GrowingTree: React.FC = () => {
   const [currentLength, setCurrentLength] = useState(0);
   const initialLength = 100;
   const growIncrement = 10; // Increment per drag
+  const [selectedIcon, setSelectedIcon] = useState<string>('💧');
 
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault(); // Allow dropping
@@ -74,14 +75,30 @@ const GrowingTree: React.FC = () => {
   }, [currentLength]); // Re-run the drawing logic when currentLength changes
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh' }}>
       <canvas ref={canvasRef} width={400} height={400} onDragOver={handleDragOver} onDrop={handleDrop} />
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+        {['🏺', '☀️', '💧'].map((icon) => ( // choose icons
+          <div
+            key={icon}
+            onClick={() => setSelectedIcon(icon)}
+            style={{
+              cursor: 'pointer',
+              fontSize: '32px',
+              padding: '0 10px',
+              border: selectedIcon === icon ? '2px solid blue' : 'none',
+            }}
+          >
+            {icon}
+          </div>
+        ))}
+      </div>
       <div
-        onDragStart={(e) => e.dataTransfer.setData('text/plain', '')}
         draggable="true"
-        style={{ cursor: 'grab', marginTop: '20px', fontSize: '32px' }}
+        onDragStart={(e) => e.dataTransfer.setData('text/plain', selectedIcon)}
+        style={{ cursor: 'grab', fontSize: '32px', marginTop: '20px' }}
       >
-        🌱 {/* Icon to drag */}
+        {selectedIcon}
       </div>
     </div>
   );
