@@ -12,7 +12,7 @@ React, Figma, cookie, mapbox
 1. Go to folder ecowand:\
   git clone // clone the repository\
   cd EcoWanderers // go to the folder you've cloned\
-  cd ecowand // go to the ***root*** repository\
+  cd ecowand // go to the ***root*** repository
 2. under 'ecowand', create a file called ***.env.local***
 3. inside '.env.local', Type: NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN="YOUR TOKEN KEY"
 4. Replace "YOUR TOKEN KEY" with your ***actual key***
