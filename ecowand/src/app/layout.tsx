@@ -1,6 +1,7 @@
 import Navigation from "./components/navigation/navigation";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { SessionProvider } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navigation />
         {children}
+        {/* <SessionProvider>
+          {children}
+        </SessionProvider> */}
       </body>
     </html>
   );
