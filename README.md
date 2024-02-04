@@ -15,7 +15,7 @@ React, Figma, cookie, mapbox
   cd ecowand // go to the ***root*** repository
 2. under 'ecowand', create a file called ***.env.local***
 3. inside '.env.local', Type: NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN="YOUR TOKEN KEY"
-4. go to file 'page.tsx' (cd ecowand/src) and replace 'NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN' with the default token after 
+4. go to file 'page.tsx' (cd ecowand/src) and replace 'NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN' with the default token after mapboxgl.accessToken
 5. Replace "YOUR TOKEN KEY" with your ***actual key***
 
 How to get the token?
