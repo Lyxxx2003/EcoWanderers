@@ -1,10 +1,7 @@
 'use client';
-import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import cookie from 'js-cookie'; 
-import Logo from '../components/navigation/navbar/Logo';
-import Image from "next/image";
 
 export default function Signin() {
   const [email, setEmail] = useState('');
