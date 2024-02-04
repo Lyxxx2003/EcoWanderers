@@ -20,8 +20,6 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-
-
     <Disclosure as="nav" className="bg-green-800">
       {({ open }) => (
         <>
@@ -138,37 +136,5 @@ const Navbar = () => {
     </Disclosure>
   )
 }
-
-
-//     <>
-//       <div className="w-full h-20 bg-emerald-800 sticky top-0">
-//         <div className="container mx-auto px-4 h-full">
-//           <div className="flex justify-between items-center h-full">
-//             <Logo />
-//             <ul className="hidden md:flex gap-x-6 text-white">
-//               <li>
-//                 <Link href="/about">
-//                   <p>About Us</p>
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="/savings">
-//                   <p>Savings</p>
-//                 </Link>
-//               </li>
-//               <li>
-//                 <Link href="/history">
-//                   <p>History</p>
-//                 </Link>
-//               </li>
-//             </ul>
-//             <Button />
-            
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
 
 export default Navbar;

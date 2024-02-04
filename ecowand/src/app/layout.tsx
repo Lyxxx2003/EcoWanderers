@@ -1,4 +1,4 @@
-import Navigation from "./components/navigation/navigation";
+import Navigation from "./navigation/navigation";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
