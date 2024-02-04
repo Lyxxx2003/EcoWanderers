@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 // Set your Mapbox access token here
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+mapboxgl.accessToken = "pk.eyJ1IjoieXhsY3UwMyIsImEiOiJjbHM3azM4YmMxZG15MmpyeGtkazFqd3lyIn0.zkVLUAApeW4y9kPEzH31SQ";
 
 const Home: React.FC = () => {
   const [origin, setOrigin] = useState('');
