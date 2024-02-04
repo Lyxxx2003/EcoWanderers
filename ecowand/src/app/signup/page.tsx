@@ -3,11 +3,19 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { auth } from '../firebase';
+import cookie from 'js-cookie'; 
 
 export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordAgain, setPasswordAgain] = useState('');
+  const router = useRouter();
+  const handleClick = () => {
+    cookie.set('username', email, { expires: 7 })
+    router.push('/');
+  };
+  const cookieValue = cookie.get('username');
+  console.log(cookieValue);
 
   const signup = () => {
     createUserWithEmailAndPassword(auth, email, password);
@@ -64,29 +72,11 @@ export default function Signup() {
                 />
               </div>
             </div>
-            <div>
-              <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-black">
-                  Password Again
-                </label>
-              </div>
-              <div className="mt-2">
-                <input
-                  id="passwordAgain"
-                  name="passwordAgain"
-                  type="password"
-                  autoComplete="current-password"
-                  onChange={(e) => setPasswordAgain(e.target.value)}
-                  required
-                  className="block w-full rounded-md border-0 bg-white/5 py-1.5 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-green-500 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
 
             <div>
               <button
                 disabled={(!email || !password || !passwordAgain) || (password !== passwordAgain)}
-                onClick={() => signup()}
+                onClick={() => handleClick()}
                 className="disabled:opacity-40 flex w-full justify-center rounded-md bg-green-500 px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Sign Up
