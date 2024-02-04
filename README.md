@@ -1,5 +1,5 @@
 # EcoWanderers -- DevFest
-[AppHomepage](https://eco-wanderers.vercel.app/) (Keep Updating)\
+[AppHomepage](https://ecowanderers.vercel.app/) (Keep Updating)\
 [Design](https://www.figma.com/file/25vlAXVS8CEidIUnIRUbHo/EcoWanderers?type=design&node-id=0%3A1&mode=dev&t=PBJvjVZSiWYjawMM-1)\
 [Devpost](https://devpost.com/software/ecowanderers-do873p)
 
