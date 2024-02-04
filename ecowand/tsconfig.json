@@ -5,6 +5,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "types": ["mapbox-gl"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -34,7 +36,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "custom.d.ts",
-    "declarations.d.ts"
+    "declarations.d.ts",
+    "mapbox-gl.d.ts"
   ],
   "exclude": [
     "node_modules"
