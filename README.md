@@ -15,7 +15,7 @@ React, Figma, cookie, mapbox
   cd ecowand // go to the ***root*** repository
 2. under 'ecowand', create a file called ***.env.local***
 3. inside '.env.local', Type: NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN="YOUR TOKEN KEY" (you should **NOT** include "" in your .env.local file)
-4. go to file 'page.tsx' (cd ecowand/src) and replace 'NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN' with the default token after mapboxgl.accessToken
+4. go to file 'page.tsx' (cd ecowand/src) and replace 'NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN' with the default token after mapboxgl.accessToken (**this is important since ONLY by this can the app uses the NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN variable that you define in .env.local**)
 5. Replace "YOUR TOKEN KEY" with your ***actual key***
 
 (Note that we've provided our token to make a successful deployment, but if you want to use your own token, please follow the above steps.)
