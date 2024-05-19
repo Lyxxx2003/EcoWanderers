@@ -27,7 +27,7 @@ How to get the token?
 4. Copy your token to "YOUR TOKEN KEY" in '.env.local'
 
 # Contributors
-Yuxin Li: Figma Design, Website 'saving' page Programming, Edit on Home page
-Meng Fan Wang:
-James Ignacio:
+Yuxin Li: Figma Design, Website 'saving' page Programming, Edit on Home page\
+Meng Fan Wang:\
+James Ignacio:\
 Evan Taylor:
