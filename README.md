@@ -1,9 +1,9 @@
 # EcoWanderers -- DevFest
+This repository includes designs and codes for a sustainable travel web. This is designed and coded during the DevFest Hackathon at Columbia University (2024).
+
 [AppHomepage](https://ecowanderers.vercel.app/) (Keep Updating)\
 [Design](https://www.figma.com/file/25vlAXVS8CEidIUnIRUbHo/EcoWanderers?type=design&node-id=0%3A1&mode=dev&t=PBJvjVZSiWYjawMM-1)\
 [Devpost](https://devpost.com/software/ecowanderers-do873p)
-
-This repository includes designs and codes for a sustainable travel web.
 
 # Techniques
 React, Figma, cookie, mapbox
